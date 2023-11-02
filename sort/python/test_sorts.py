@@ -32,9 +32,11 @@ class TestSort(TestCase):
 
     def test_insertion(self) -> None:
         self.fn_closure(insertion_sort)
+        self.fn_closure(insertion_sort_less_code)
 
     def test_merge(self) -> None:
-        self.fn_closure(merge_sort)
+        self.fn_closure(merge_sort_top_down)
+        self.fn_closure(merge_sort_bottom_up)
 
     def test_quick(self) -> None:
         self.fn_closure(quick_sort)
@@ -44,3 +46,4 @@ class TestSort(TestCase):
 
     def test_selection(self) -> None:
         self.fn_closure(selection_sort)
+        self.fn_closure(selection_sort_pythonic)
